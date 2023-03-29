@@ -1,0 +1,32 @@
+.slider {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1;
+  height: 4em;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 50%;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: #fff;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #d4d4d4;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  height: 1em;
+  border-bottom: 2px solid #c0c0c0;
+  background-color: transparent;
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: rebeccapurple;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title-container {
+  margin: 125px 0 175px;
+  text-align: center;
+}
+
+.title-container h1 {
+  font-size: 60px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time-container label {
+  width: 50px;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+.time-container:first-child label {
+  margin-right: 5px;
+}
+
+.filename-container {
+  margin-top: 100px;
+}
+
+.filename-container h2 {
+  font-size: 25px;
+}

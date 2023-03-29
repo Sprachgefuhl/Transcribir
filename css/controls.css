@@ -1,0 +1,58 @@
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  margin: 0 25px 0;
+  width: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#file-upload {
+  display: none;
+}
+
+#file:hover,
+#play:hover {
+  color: #d4d4d4;
+}
+
+#speed-gauge {
+  width: 12px;
+}
+
+#speed-slider {
+  box-sizing: border-box;
+  margin-top: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 150px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#speed-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: #fff;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+#speed-slider::-webkit-slider-runnable-track {
+  cursor: pointer;
+  height: 0.7em;
+  border-bottom: 10px solid rgb(76, 37, 116);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.controls-container p {
+  margin-left: 5px;
+  margin-top: 18px;
+  width: 50px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/49042efa96.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/controls.css">
+  <link rel="stylesheet" href="css/time-slider.css">
+  <link rel="stylesheet" href="css/loop.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Transcribir</title>
+</head>
+
+<body>
+
+  <div class="title-container">
+    <h1 id="title">¡Transcribir!</h1>
+  </div>
+
+  <div class="main-container">
+
+    <div class="controls-container">
+      <label for="file-upload">
+        <i id="file" class="fa-solid fa-upload control"></i>
+      </label>
+      <input type="file" id="file-upload" accept=".mp3, audio/*">
+
+      <i id="play" class="fa-solid fa-play control"></i>
+      <i id="speed-gauge" class="fa-solid fa-gauge control"></i>
+
+      <input type="range" id="speed-slider" value="100" min="10" max="200">
+      <p id="speed-display">100%</p>
+    </div>
+
+    <div class="time-container">
+      <label for="timeControl" id="timeDisplayCurrent">0:00</label>
+      <input type="range" value="0" name="timeControl" class="slider" id="timeControl">
+      <label for="timeControl" id="timeDisplayLeft">0:00</label>
+    </div>
+
+    <div class="loop-container">
+      <input type="text" id="start-loop" class="loop-input" placeholder="start">
+      -
+      <input type="text" id="end-loop" class="loop-input" placeholder="end">
+
+      <i class="fa-solid fa-retweet" id="loop-icon"></i>
+    </div>
+    <span id="loop-example">e.g. 2:35.7 - 2:40</span>
+
+    <div class="filename-container">
+      <h2 id="filename"></h2>
+    </div>
+  </div>
+
+  <script src="js/constants.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/loop.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

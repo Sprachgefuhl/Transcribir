@@ -1,0 +1,35 @@
+.loop-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loop-input {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: rgb(76, 37, 116);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+.loop-input::placeholder {
+  color: #cecece;
+}
+
+#loop-icon {
+  font-size: 20px;
+}
+
+#loop-example {
+  margin-right: 30px;
+  font-size: 15px;
+  color: #a0a0a0;
+  font-weight: bold;
+  font-style: italic;
+}
