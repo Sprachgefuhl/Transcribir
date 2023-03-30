@@ -11,13 +11,12 @@
   cursor: pointer;
 }
 
-#file-upload {
-  display: none;
+.control:hover {
+  color: #d4d4d4;
 }
 
-#file:hover,
-#play:hover {
-  color: #d4d4d4;
+#file-upload {
+  display: none;
 }
 
 #speed-gauge {

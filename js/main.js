@@ -75,9 +75,15 @@ playPauseEl.addEventListener('click', () => {
   else playFile();
 });
 
+speedGaugeIconEl.addEventListener('click', () => {
+  masterFile.playbackRate = 1;
+  speedSliderEl.value = 100;
+  speedDisplayEl.textContent = '100%';
+});
+
 speedSliderEl.addEventListener('input', () => {
   masterFile.playbackRate = speedSliderEl.value / 100;
-  document.getElementById('speed-display').textContent = speedSliderEl.value + '%';
+  speedDisplayEl.textContent = speedSliderEl.value + '%';
 });
 
 timeSliderEl.addEventListener('mousedown', () => slidingTime = true);
